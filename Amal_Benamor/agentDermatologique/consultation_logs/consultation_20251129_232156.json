@@ -1,0 +1,884 @@
+{
+  "session_id": "20251129_232156",
+  "timestamp_start": "2025-11-29T23:21:56.666247",
+  "events": [
+    {
+      "timestamp": "2025-11-29T23:22:32.754228",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Gale",
+        "confidence": 0.9098606705665588,
+        "top3_predictions": [
+          {
+            "class": "Gale",
+            "confidence": 0.9098606705665588
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4549303352832794
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.27295820116996766
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:22:35.825968",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin lesion appears to be an inflamed, pink, and possibly itchy patch on the back of the person.\n2. Color & Appearance: The lesion has a pinkish hue, with a slightly rough surface texture. The border of the lesion is somewhat irregular.\n3. Distribution Pattern: The lesion is located on the back of the person, covering a relatively large area.\n4. Associated Signs: There is no visible evidence of scratching or inflammation, but the lesion does appear to be itchy.\n5. Severity Indicators: The lesion appears to be relatively mild in terms of severity, with no signs of significant inflammation or discharge.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "pink"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:22:35.918140",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Gale 1. Lesion Type: The skin lesion appears to be an inflamed, pink, and possibly itchy patch on the bac",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.01870551318285427,
+          0.01870551318285427,
+          0.01870551318285427
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:22:35.919200",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:22:38.484043",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 306,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Gale (confiance 91.0%)\n- Observations: 1. Lesion Type: The skin lesion appears to be an infla...",
+        "response": "Bonjour, je suis heureux de vous aider et de discuter de votre problème de peau. Il semble que vous avez une plaque rouge et enflammée sur votre dos, avec une surface un peu rugueuse. Cette plaque pourrait être irritante et causer des démangeaisons. Depuis combien de temps avez-vous remarqué cette lésion?"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:22:38.489244",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:23:39.524370",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:23:39.525402",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase temporal → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:23:42.390942",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 204,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Gale\nPHASE: temporal\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES:\n{'text': \"📋 Aucune information spécifique confirmée pour l'instant.\\n\", 'structured': {'temporal_info':...",
+        "response": "Je vois, vous avez mentionné que cela dure depuis quelques jours. Pouvez-vous me donner une idée plus précise de la durée, par exemple depuis combien de jours exactement avez-vous remarqué ces symptômes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:23:42.391931",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:24:37.215229",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:24:37.215229",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:24:41.774599",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 400,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: Gale\nOBSERVATIONS: 1. Lesion Type: The skin lesion appears to be an inflamed, pink, and possibly itchy patch on the back of the person.\n2. Color &...",
+        "response": "Vous avez probablement développé une gale, une infection cutanée causée par un petit parasite. Cela pourrait être lié à l'utilisation de l'antibiotique que vous avez mentionnée. Lorsque ce parasite pénètre dans votre peau, il peut provoquer des démangeaisons et des rougeurs, comme la lésion que vous avez décrite sur votre dos. Quels sont vos symptômes actuels, avez-vous des démangeaisons la nuit ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:24:41.775658",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:19.370981",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 3,
+          "nb_questions_asked": 2
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:19.371999",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → temporal. Lacunes: 2"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:22.325381",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 197,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Gale\nPHASE: triggers\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n✅ Symptômes: douleur, fièvre\\n🎯 Déclenchants: médicament\\n', 'str...",
+        "response": "Merci pour ces informations supplémentaires. Je vois que vous avez des démangeaisons, de la fièvre et de la douleur. Pouvez-vous me décrire comment ces symptômes ont évolué depuis leur apparition ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:22.326379",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:50.418789",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 4,
+          "nb_questions_asked": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:50.418789",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 2 lacunes)",
+        "information_gaps": [
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:55.508441",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 450,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: Gale\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n✅ Symptômes: douleur, fièvre, rougeur\\n🎯 Déclenchants: médicament\\n...",
+        "response": "Merci de m'avoir fourni ces informations détaillées sur vos symptômes. En résumé, vous présentez des symptômes tels que la douleur, la fièvre et la rougeur, qui ont été déclenchés par un médicament. Il est probable, avec une certitude élevée, que vous souffrez d'une gale. Je vous recommande de suivre un traitement antiparasitaire topique et de laver vos vêtements et vos draps à chaud pour éviter toute contamination. Avez-vous d'autres questions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-29T23:25:55.509507",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:23.824807",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Impétigo",
+        "confidence": 0.7936253547668457,
+        "top3_predictions": [
+          {
+            "class": "Impétigo",
+            "confidence": 0.7936253547668457
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.39681267738342285
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.2380876064300537
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:27.041805",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Impétigo\n2. Color & Appearance: Pink, slightly scaly, with a slightly raised border\n3. Distribution Pattern: Left cheek, extending to the chin\n4. Associated Signs: Redness, swelling, and mild discharge\n5. Severity Indicators: Mild to moderate\n6. Secondary Changes: Inflammation, erythema, and slight edema\n7. Duration: Recent onset\n8. Dermatosis: Impétigo\n9. Cause: Staphylococcus aureus infection\n10. Risk Factors: Skin trauma, poor hygiene, and weakened immune system\n11. Treatment: Antibiotics, topical creams, and wound care\n12. Prognosis: Good, with proper treatment and care",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red",
+            "pink"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:27.167765",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Impétigo 1. Lesion Type: Impétigo\n2. Color & Appearance: Pink, slightly scaly, with a slightly raised border\n",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.0266172629212178,
+          0.0266172629212178,
+          0.0266172629212178
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:27.167765",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:30.510437",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 392,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Impétigo (confiance 79.4%)\n- Observations: 1. Lesion Type: Impétigo 2. Color & Appearance: Pi...",
+        "response": "Bonjour, je suis ravi de vous aider avec vos problèmes de peau. Il semble que vous avez une éruption cutanée sur la joue gauche qui s'étend jusqu'au menton, avec des lésions roses légèrement squameuses et une légère inflammation. Cela ressemble à une infection cutanée bénigne, mais je dois en savoir plus pour confirmer le diagnostic. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:06:30.512523",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:07:17.435880",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 5,
+          "nb_questions_asked": 4
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:07:17.435880",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → temporal. Lacunes: 2"
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:07:20.606412",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 237,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Impétigo\nPHASE: temporal\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n✅ Symptômes: douleur, fièvre, rougeur\\n🎯 Déclenchants: médica...",
+        "response": "Merci de me donner plus de détails sur vos symptômes. Vous avez mentionné que vous avez de la fièvre et de la douleur depuis presque un jour. Pouvez-vous me dire si ces symptômes ont empiré ou sont restés stables depuis leur apparition ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:07:20.607433",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:08:10.012578",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": "stable"
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 6,
+          "nb_questions_asked": 5
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:08:10.012578",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (2 échanges, 1 lacunes)",
+        "information_gaps": [
+          "Impact quotidien"
+        ],
+        "next_question_category": null,
+        "force_answer_patient_question": true
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:08:14.652058",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 388,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Impétigo\nURGENCE: 5.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvre, rougeur\\n🎯 ...",
+        "response": "Votre cas ne semble pas très grave pour le moment. Il est stable et les symptômes que vous avez décrits sont typiques d'un impétigo, une infection cutanée bénigne.\n\nCela s'explique par le fait que vous n'avez pas signalé de signes d'aggravation tels que des douleurs intenses ou une fièvre élevée.\n\nPouvez-vous me dire si vous avez déjà eu des problèmes de peau similaires dans le passé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:08:14.654084",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:30.153217",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": "stable"
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 7,
+          "nb_questions_asked": 6
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:30.153217",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (3 échanges, 1 lacunes)",
+        "information_gaps": [
+          "Impact quotidien"
+        ],
+        "next_question_category": null,
+        "patient_multiple_questions": true,
+        "force_answer_patient_question": true
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:34.403208",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:34.404719",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:37.450346",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:37.451382",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:40.397129",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:09:40.397129",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:31.040287",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": "stable"
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur",
+            "fièvre",
+            "rougeur"
+          ],
+          "denied": [],
+          "intensity": {
+            "rougeur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament",
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 8,
+          "nb_questions_asked": 7
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:31.040287",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 1 lacunes)",
+        "information_gaps": [
+          "Impact quotidien"
+        ],
+        "next_question_category": null,
+        "patient_multiple_questions": true,
+        "force_answer_patient_question": true
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:35.088170",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:35.089283",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:38.195508",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:38.196574",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:41.939142",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 29,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS DE FAÇON FLUIDE !\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n📈 Évolution: stable\\n✅ Symptômes: douleur, fièvr...",
+        "response": "Erreur technique. Reformulez."
+      }
+    },
+    {
+      "timestamp": "2025-11-30T00:10:41.939142",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (65 < 80 car)"
+        ]
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-30T00:11:18.670037"
+}

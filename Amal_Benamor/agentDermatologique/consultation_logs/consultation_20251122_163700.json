@@ -1,0 +1,97 @@
+{
+  "session_id": "20251122_163700",
+  "timestamp_start": "2025-11-22T16:37:00.936972",
+  "events": [
+    {
+      "timestamp": "2025-11-22T16:37:01.887119",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "drug reactions",
+        "confidence": 0.9368321895599365,
+        "top3_predictions": [
+          {
+            "class": "drug reactions",
+            "confidence": 0.9368321895599365
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.28104965686798095
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.09368321895599366
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:11.451914",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "The skin in the image displays a red, itchy, and inflamed area with a yellowish substance on it. The lesion appears to be a primary morphology with secondary changes, possibly indicating a drug reaction. The distribution pattern of the lesion is irregular, covering a significant portion of the skin. The skin displays a red, itchy, and inflamed area with a yellowish substance on it. The lesion appears to be a primary morphology with secondary changes, possibly indicating a drug reaction. The distribution pattern of the lesion is irregular, covering a significant portion of the skin.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:11.511447",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "drug reactions The skin in the image displays a red, itchy, and inflamed area with a yellowish substance on it. The lesion appears to be a primary morphology with secondary changes, possibly indicating a drug reacti",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.02539922704744837,
+          0.02539922704744837,
+          0.02539922704744837
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:11.511447",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:11.596568",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: drug reactions (Confiance: 93.7%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:23.843891",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 3441,
+        "response_length": 1361,
+        "prompt_preview": "Tu es un dermatologue expert francophone. Utilise une approche de raisonnement structuré.\n\n═══════════════════════════════════════════════════════════════════\n                    ANALYSE INITIALE DU C...",
+        "response": "**ÉTAPE 1 - DONNÉES D'ENTRÉE**\n\nJe vais analyser les données fournies.\n\n**ÉTAPE 2 - TON RAISONNEMENT MÉDICAL**\n\nA) Synthèse de l'observation visuelle:\nL'image montre une zone de peau rouge, prurigineuse et enflammée avec une substance jaunâtre. La lésion semble avoir une morphologie primaire avec des changements secondaires, ce qui pourrait indiquer une réaction médicamenteuse.\n\nB) Concordance diagnostique:\nLe diagnostic de réaction médicamenteuse est cohérent avec les observations visuelles, car la présence d'une substance jaunâtre et la morphologie de la lésion suggèrent une réaction allergique ou irritante.\n\nC) Diagnostic différentiel:\n1. Hypothèse principale: réaction médicamenteuse - probabilité estimée: 90%\n2. Alternative 1: eczéma - probabilité estimée: 5%\n3. Alternative 2: dermatite de contact - probabilité estimée: 5%\n\nD) Informations critiques à obtenir:\n- Quels médicaments a-t-on pris récemment ?\n- A-t-on des antécédents d'allergies ou de réactions médicamenteuses ?\n- Quand les symptômes ont-ils commencé ?\n- A-t-on déjà eu des problèmes de peau similaires ?\n\nE) Évaluation du niveau d'urgence:\nÉtant donné le score d'urgence de 0,0/10, il n'y a pas d'urgence médicale immédiate. Cependant, il est important de poursuivre l'anamnèse pour confirmer le diagnostic et déterminer le meilleur plan de traitement.\n\n**ÉTAPE 3 - TON MESSAGE AU"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:37:23.845887",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "⚠️ ACCEPTABLE (mais à raccourcir)",
+        "issues": [
+          "Réponse trop longue (1361 > 400 caractères)"
+        ]
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-22T16:37:56.757544"
+}

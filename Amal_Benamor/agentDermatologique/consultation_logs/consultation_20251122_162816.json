@@ -1,0 +1,181 @@
+{
+  "session_id": "20251122_162816",
+  "timestamp_start": "2025-11-22T16:28:16.698902",
+  "events": [
+    {
+      "timestamp": "2025-11-22T16:28:17.682407",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Atopic Dermatitis",
+        "confidence": 0.4423855245113373,
+        "top3_predictions": [
+          {
+            "class": "Atopic Dermatitis",
+            "confidence": 0.4423855245113373
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.13271565735340118
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.04423855245113373
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:21.729196",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to have an atopic dermatitis-like appearance, characterized by a red, inflamed, and possibly itchy skin.\n2. Color & Appearance: The skin exhibits a reddish hue, with a slightly rough texture. The border is somewhat blurred, giving the impression of a diffuse distribution.\n3. Distribution Pattern: The affected area appears to be quite extensive, covering a significant portion of the back.\n4. Associated Signs: There is no visible evidence of scratching, and the skin does not appear to be excessively inflamed or exuding any discharge.\n5. Severity Indicators: The severity of the condition seems to be relatively mild, with the skin not appearing excessively damaged or scarred.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:21.791274",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Atopic Dermatitis 1. Lesion Type: The skin appears to have an atopic dermatitis-like appearance, characterized by a red, inflamed, and possibly itchy skin.\n2. Color & Appearance: The skin exhibits a reddish hue, with a",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.03144141214811709,
+          0.03144141214811709,
+          0.03144141214811709
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:21.791274",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:21.875353",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "\n╔══════════════════════════════════════════════════════════════════\n║              DIAGNOSTIC DIFFÉRENTIEL\n╚══════════════════════════════════════════════════════════════════\n\n🎯 HYPOTHÈSE PRINCIPALE:\n   Atopic Dermatitis - Probabilité: 44.2%\n\n🔄 DIAGNOSTICS ALTERNATIFS À CONSIDÉRER:\n\n   70% - Eczema de contact\n      Arguments: exposition identifiable, début adulte\n\n   50% - Gale\n      Arguments: prurit nocturne, sillons, contage\n\n   40% - Ichtyose\n      Arguments: xérose généralisée, squames fines\n\n🔍 CRITÈRES DISTINCTIFS:\n\n   Dermatite atopique:\n      • début enfance\n      • plis\n      • terrain atopique familial\n\n   Eczema contact:\n      • zone de contact\n      • patch-tests positifs\n\n   Gale:\n      • sillons\n      • entourage atteint\n      • prurit familial\n\n======================================================================"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:34.049093",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 3575,
+        "response_length": 1353,
+        "prompt_preview": "Tu es un dermatologue expert francophone. Utilise une approche de raisonnement structuré.\n\n═══════════════════════════════════════════════════════════════════\n                    ANALYSE INITIALE DU C...",
+        "response": "**ÉTAPE 1 - DONNÉES D'ENTRÉE**\n\nJe vais analyser les données fournies pour établir un diagnostic initial.\n\n**ÉTAPE 2 - TON RAISONNEMENT MÉDICAL**\n\nA) Synthèse de l'observation visuelle:\nLa peau présente une apparence rouge, enflammée et potentiellement prurigineuse, avec une texture légèrement rugueuse et une distribution diffuse.\n\nB) Concordance diagnostique:\nLe diagnostic d'Atopic Dermatitis est cohérent avec les observations visuelles, car la peau présente des caractéristiques typiques de cette affection, telles qu'une apparence rouge et enflammée.\n\nC) Diagnostic différentiel:\n1. Hypothèse principale: Atopic Dermatitis - probabilité estimée: 60%\n2. Alternative 1: Psoriasis - probabilité estimée: 20%\n3. Alternative 2: Dermite de contact - probabilité estimée: 10%\n\nD) Informations critiques à obtenir:\n- Antécédents médicaux du patient (allergies, maladies cutanées antérieures)\n- Histoire de la maladie (durée, évolution, traitement précédent)\n- Facteurs déclenchants potentiels (produits chimiques, savons, etc.)\n- Présence de symptômes associés (prurit, démangeaisons, etc.)\n\nE) Évaluation du niveau d'urgence:\nÉtant donné le score d'urgence de 0,0/10, il n'y a pas d'urgence médicale immédiate. Cependant, il est important de poursuivre l'anamnèse et l'examen pour confirmer le diagnostic et établir un plan de traitement approprié.\n\n**É"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:28:34.053081",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop longue (1353 > 400 caractères)",
+          "Aucune question posée (dialogue doit continuer)",
+          "Dialogue doit contenir une question"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:29:44.289868",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "medical_history": [
+            "eczéma"
+          ],
+          "atopy": true
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:29:44.289868",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:29:44.289868",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:29:48.667350",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2264,
+        "response_length": 358,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nMerci de partager cette information importante sur votre histoire familiale. En effet, l'eczéma a une composante génétique et le fait que votre mère en ait souffert augmente le risque que vous en développiez également. \n\nPouvez-vous me dire depuis combien de temps vous ressentez ces symptômes et comment ils ont évolué au fil du temps ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:29:48.668347",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-22T16:30:51.949889"
+}

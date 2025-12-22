@@ -1,0 +1,232 @@
+{
+  "session_id": "20251122_184415",
+  "timestamp_start": "2025-11-22T18:44:15.133076",
+  "events": [
+    {
+      "timestamp": "2025-11-22T18:44:15.291173",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Urticaria Hives",
+        "confidence": 0.8933389186859131,
+        "top3_predictions": [
+          {
+            "class": "Urticaria Hives",
+            "confidence": 0.8933389186859131
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:44:18.083495",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Hives\n2. Color & Appearance: Red, slightly rough surface texture, well-defined borders\n3. Distribution Pattern: Symmetrical, covering a significant portion of the skin\n4. Associated Signs: None observed\n5. Severity Indicators: Mild to moderate severity\n\nThe image shows a person with a significant number of hives on their skin. The hives are red in color and have a slightly rough surface texture. They are well-defined and symmetrical, covering a large portion of the skin. There are no visible signs of scratching, inflammation, or discharge. The severity of the hives appears to be mild to moderate.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:44:18.170805",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Urticaria Hives 1. Lesion Type: Hives\n2. Color & Appearance: Red, ",
+        "nb_results": 0,
+        "similarity_scores": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:44:18.170805",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:44:33.602160",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 3175,
+        "response_length": 1704,
+        "prompt_preview": "Tu es un dermatologue expert francophone. Utilise une approche de raisonnement structuré.\n\n═══════════════════════════════════════════════════════════════════\n                    ANALYSE INITIALE DU C...",
+        "response": "🧠 ÉTAPE 2 - TON RAISONNEMENT MÉDICAL :\n\nA) Synthèse de l'observation visuelle :\nL'image montre une personne avec de nombreuses plaques rouges sur la peau, qui ont une texture légèrement rugueuse et des contours bien définis. Les plaques sont symétriques et couvrent une grande partie de la peau.\n\nB) Concordance diagnostique :\nLe diagnostic d'Urticaria Hives est cohérent avec les observations, car les caractéristiques des plaques (rouges, texture légèrement rugueuse, contours bien définis) et leur distribution symétrique sont typiques de cette affection.\n\nC) Diagnostic différentiel :\n1. Hypothèse principale : Urticaria Hives - probabilité estimée : 90%\n2. Alternative 1 : Dermatite de contact - probabilité estimée : 5%\n3. Alternative 2 : Éruption cutanée virale - probabilité estimée : 5%\n\nD) Informations critiques à obtenir :\n- Quels sont les symptômes qui ont précédé l'apparition des plaques ?\n- Avez-vous récemment pris des médicaments ou utilisé des produits cosmétiques nouveaux ?\n- Avez-vous des antécédents d'allergies ou de réactions cutanées ?\n\nE) Évaluation du niveau d'urgence :\nÉtant donné le score d'urgence de 0,0/10, il n'y a pas d'urgence médicale immédiate. Cependant, il est important de poursuivre l'anamnèse et l'examen pour confirmer le diagnostic et déterminer la cause sous-jacente des plaques.\n\n💬 ÉTAPE 3 - TON MESSAGE AU PATIENT :\n\nBonjour, je suis désolé de voir que vous avez ces plaques rouges sur la peau. Il semble que vous ayez une réaction cutanée qui pourrait être liée à une allergie ou à une irritation. Pouvez-vous me dire si vous avez récemment pris des médicaments ou utilisé des produits cosmétiques nouveaux qui pourraient avoir déclenché cette réaction ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:44:33.603218",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:45:19.513214",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:45:19.513214",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:45:19.573511",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "\n╔══════════════════════════════════════════════════════════════════\n║              DIAGNOSTIC DIFFÉRENTIEL\n╚══════════════════════════════════════════════════════════════════\n\n🎯 HYPOTHÈSE PRINCIPALE:\n   Urticaria Hives - Probabilité: 89.3%\n\n🔄 DIAGNOSTICS ALTERNATIFS À CONSIDÉRER:\n\n   50% - Erythème polymorphe\n      Arguments: lésions fixes, atteinte muqueuse\n\n   60% - Piqûres d'insectes\n      Arguments: papules isolées, contexte extérieur\n\n   40% - Vasculite cutanée\n      Arguments: purpura, douleur\n\n🔍 CRITÈRES DISTINCTIFS:\n\n   Urticaire:\n      • lésions fugaces\n      • migrent\n      • prurit\n      • papules œdémateuses\n\n   Erythème polymorphe:\n      • cocardes\n      • lésions fixes 7-10j\n\n   Piqûres:\n      • point central\n      • localisation exposée\n\n======================================================================"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:45:23.838236",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2252,
+        "response_length": 485,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe comprends que vous avez utilisé une crème hydratante hier, ce qui pourrait être un facteur déclenchant potentiel pour les démangeaisons. Cependant, il est important de noter que l'urticaria peut être causée par de nombreux facteurs, y compris des réactions allergiques, des infections ou des problèmes de santé sous-jacents.\n\nPouvez-vous me dire depuis combien de temps vous ressentez ces démangeaisons et si elles ont empiré ou diminué depuis leur apparition ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:45:23.838236",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Aucune question posée (dialogue doit continuer)",
+          "Dialogue doit contenir une question"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:46:09.681410",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "depuis hier je te dis !!!!!! est ce que c'est grave ? je dois aller au medecin tout de suite ou attendre jsuqu'a demain",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:46:09.681410",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: symptomatology."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:46:09.742670",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "\n╔══════════════════════════════════════════════════════════════════\n║              DIAGNOSTIC DIFFÉRENTIEL\n╚══════════════════════════════════════════════════════════════════\n\n🎯 HYPOTHÈSE PRINCIPALE:\n   Urticaria Hives - Probabilité: 89.3%\n\n🔄 DIAGNOSTICS ALTERNATIFS À CONSIDÉRER:\n\n   50% - Erythème polymorphe\n      Arguments: lésions fixes, atteinte muqueuse\n\n   60% - Piqûres d'insectes\n      Arguments: papules isolées, contexte extérieur\n\n   40% - Vasculite cutanée\n      Arguments: purpura, douleur\n\n🔍 CRITÈRES DISTINCTIFS:\n\n   Urticaire:\n      • lésions fugaces\n      • migrent\n      • prurit\n      • papules œdémateuses\n\n   Erythème polymorphe:\n      • cocardes\n      • lésions fixes 7-10j\n\n   Piqûres:\n      • point central\n      • localisation exposée\n\n======================================================================"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:46:13.563913",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2384,
+        "response_length": 414,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "Je comprends que vous vous inquiétez pour votre état, mais pour l'instant, il semble que la situation ne soit pas critique.\n\nIl est important de noter que l'apparition de ces symptômes depuis hier nous aide à comprendre la chronologie de l'évolution de votre état.\n\nPouvez-vous me dire si vous avez remarqué une quelconque activité, aliment ou exposition qui pourrait être lié à l'apparition de ces démangeaisons ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:46:13.563913",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-22T18:46:46.596380"
+}

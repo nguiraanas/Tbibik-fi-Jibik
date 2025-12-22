@@ -1,0 +1,397 @@
+{
+  "session_id": "20251122_183851",
+  "timestamp_start": "2025-11-22T18:38:51.382532",
+  "events": [
+    {
+      "timestamp": "2025-11-22T18:38:51.537182",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Maladie cutanée auto-immune",
+        "confidence": 0.7055410742759705,
+        "top3_predictions": [
+          {
+            "class": "Maladie cutanée auto-immune",
+            "confidence": 0.7055410742759705
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:38:54.142859",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to be affected by a primary morphology, possibly a maladie cutanée auto-immune.\n2. Color & Appearance: The skin is red and has a rough texture, with visible border characteristics.\n3. Distribution Pattern: The affected area is symmetrical and covers a significant portion of the skin.\n4. Associated Signs: There is evidence of scratching, inflammation, and discharge.\n5. Severity Indicators: The lesions are extensive and appear to be acute in nature.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:38:54.232863",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Maladie cutanée auto-immune 1. Lesion Type: The skin appears to be affected by",
+        "nb_results": 0,
+        "similarity_scores": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:38:54.232863",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:39:09.874999",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 3076,
+        "response_length": 1750,
+        "prompt_preview": "Tu es un dermatologue expert francophone. Utilise une approche de raisonnement structuré.\n\n═══════════════════════════════════════════════════════════════════\n                    ANALYSE INITIALE DU C...",
+        "response": "🧠 ÉTAPE 2 - TON RAISONNEMENT MÉDICAL:\n\nA) Synthèse de l'observation visuelle:\nLa peau présente une lésion primaire avec une texture rugueuse, des bordures visibles et une coloration rouge. La distribution de la lésion est symétrique et couvre une grande partie de la peau.\n\nB) Concordance diagnostique:\nLe diagnostic de maladie cutanée auto-immune est cohérent avec les observations visuelles, car la lésion présente des caractéristiques typiques de ce type de maladie, telles que la texture rugueuse et les bordures visibles.\n\nC) Diagnostic différentiel:\n1. Hypothèse principale: Maladie cutanée auto-immune (psoriasis, pemphigus, etc.) - probabilité estimée: 60%\n2. Alternative 1: Dermatite allergique ou irritante - probabilité estimée: 20%\n3. Alternative 2: Infection cutanée (bactérienne, virale ou fongique) - probabilité estimée: 10%\n\nD) Informations critiques à obtenir:\n- Antécédents médicaux du patient (allergies, maladies auto-immunes, etc.)\n- Historique des traitements et médicaments pris récemment\n- Présence de symptômes associés (fièvre, douleur, etc.)\n- Évolution de la lésion dans le temps\n\nE) Évaluation du niveau d'urgence:\nÉtant donné le score d'urgence faible (0,0/10), il n'y a pas d'urgence à traiter immédiatement. Cependant, il est important de poursuivre l'anamnèse et les examens pour confirmer le diagnostic et déterminer le meilleur plan de traitement.\n\n💬 ÉTAPE 3 - TON MESSAGE AU PATIENT:\n\nBonjour, je suis désolé de voir que vous avez cette lésion cutanée. D'après ce que je vois, il semble que vous ayez une lésion primaire avec une texture rugueuse et des bordures visibles. Pouvez-vous me dire depuis combien de temps vous avez remarqué cette lésion et si vous avez déjà eu des symptômes similaires dans le passé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:39:09.874999",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:13.485833",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [
+            "aliment"
+          ],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:13.485833",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:13.545876",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: Maladie cutanée auto-immune (Confiance: 70.6%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:21.362943",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2261,
+        "response_length": 523,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe comprends que vous avez des inquiétudes quant à la gravité de votre cas, mais rassurez-vous, nous allons prendre le temps nécessaire pour évaluer correctement votre situation. \n\nLe fait que vous ayez des taches depuis deux ans suggère une évolution chronique, ce qui est important pour notre diagnostic.\n\nPouvez-vous me dire si vous avez remarqué des facteurs qui déclenchent ou aggravent ces taches, tels que des produits de soins personnels, des changements climatiques ou des périodes de stress ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:21.362943",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Aucune question posée (dialogue doit continuer)",
+          "Dialogue doit contenir une question"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:52.663463",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [
+            "aliment"
+          ],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:52.664461",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:52.714466",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: Maladie cutanée auto-immune (Confiance: 70.6%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:56.318045",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2208,
+        "response_length": 388,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe vous remercie de me donner cette information, cela nous aide à mieux comprendre l'évolution de vos symptômes. Il semble que vos symptômes aient débuté il y a presque deux jours, ce qui pourrait indiquer une maladie cutanée auto-immune aiguë.\n\nPouvez-vous me dire si vous avez remarqué une intensification ou une diminution de vos symptômes depuis leur apparition ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:40:56.318045",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:41:20.659322",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [
+            "aliment"
+          ],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 3,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:41:20.659322",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase symptomatology. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:41:20.712890",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: Maladie cutanée auto-immune (Confiance: 70.6%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:41:26.677902",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2208,
+        "response_length": 479,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nMerci de me confirmer que les symptômes augmentent avec le temps, cela me permet de mieux comprendre l'évolution de votre affection.\n\nCela suggère une progression de la maladie cutanée auto-immune, ce qui me pousse à investiguer davantage les facteurs déclenchants potentiels.\n\nPouvez-vous me dire si vous avez remarqué des événements ou des changements dans votre vie quotidienne qui pourraient être liés à l'apparition ou à l'aggravation de ces symptômes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:41:26.677902",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Aucune question posée (dialogue doit continuer)",
+          "Dialogue doit contenir une question"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:43:00.871189",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [
+            "aliment"
+          ],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 4,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:43:00.871189",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase symptomatology. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:43:00.927909",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: Maladie cutanée auto-immune (Confiance: 70.6%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:43:04.106411",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2269,
+        "response_length": 315,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe comprends que vous n'avez rien mangé ou utilisé de particulier qui pourrait expliquer l'apparition de ces symptômes cutanés. Cela suggère que la cause pourrait être interne ou liée à une réaction auto-immune.\n\nPouvez-vous me dire depuis combien de temps vous observez ces symptômes cutanés ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T18:43:04.106411",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-22T18:43:36.836140"
+}

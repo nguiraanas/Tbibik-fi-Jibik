@@ -1,0 +1,4307 @@
+{
+  "session_id": "20251122_203539",
+  "timestamp_start": "2025-11-22T20:35:39.976495",
+  "events": [
+    {
+      "timestamp": "2025-11-22T20:36:15.423869",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Urticaria Hives",
+        "confidence": 0.9365906715393066,
+        "top3_predictions": [
+          {
+            "class": "Urticaria Hives",
+            "confidence": 0.9365906715393066
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4682953357696533
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.280977201461792
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:21.694043",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Urticaria hives presenting as pink, bumpy, and slightly itchy patches on the back.\n2. Color & Appearance: The skin appears red and slightly inflamed, with a pinkish hue and a slightly rough texture.\n3. Distribution Pattern: The hives are scattered across the back, with some patches being more prominent than others.\n4. Associated Signs: There is no visible evidence of scratching or inflammation, but the hives are itchy.\n5. Severity Indicators: The hives appear to be mild in severity, with no signs of severe inflammation or discharge.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red",
+            "pink"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:21.774233",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Urticaria Hives 1. Lesion Type: Urticaria hives presenting as pink, bumpy, and slightly itchy patches on the back.\n2",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.03522508153083122,
+          0.03522508153083122,
+          0.03522508153083122
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:21.774233",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:24.962073",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 364,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Urticaria Hives (confiance 93.7%)\n- Observations: 1. Lesion Type: Urticaria hives presenting ...",
+        "response": "Bonjour, je suis désolé de voir que vous avez ces démangeaisons et ces plaques rouges sur votre dos. Il semble que vous ayez développé des urticaires, qui sont des réactions cutanées courantes. Elles apparaissent sous forme de plaques roses, gonflées et légèrement itchys sur votre peau. Pouvez-vous me dire depuis combien de temps vous avez remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:24.962073",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:28.140421",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 391,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Urticaria Hives (confiance 93.7%)\n- Observations: 1. Lesion Type: Urticaria hives presenting ...",
+        "response": "Bonjour, je suis là pour vous aider et je comprends que ces démangeaisons peuvent être vraiment gênantes. Il semble que vous ayez des plaques rouges et légèrement enflées sur votre dos, qui sont également un peu boursouflées. Cela ressemble à une urticaire, mais nous allons en savoir plus pour confirmer le diagnostic. Pouvez-vous me dire depuis combien de temps vous remarquez ces lésions?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:36:28.141440",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:05.879433",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:05.879433",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase temporal → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:15.246605",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 468,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Urticaria Hives\nURGENCE: 0.0/10\nINFORMATIONS: 📋 Aucune information spécifique confirmée pour l'instant.\n\nPATIENT DEMANDE: \"est ce que mon cas est tres...",
+        "response": "Votre cas d'urticaria ne semble pas très grave pour l'instant. Les symptômes que vous présentez sont courants et généralement temporaires.\n\nCela est dû au fait que les démangeaisons et les plaques rouges que vous observez sont des signes typiques d'une réaction allergique bénigne.\n\nPouvez-vous me dire si vous avez récemment été exposé à quelque chose de nouveau, comme un aliment, un médicament ou un produit cosmétique, qui pourrait avoir déclenché cette réaction ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:15.247659",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:32.087654",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 410,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Urticaria Hives\nURGENCE: 0.0/10\nINFORMATIONS: 📋 Aucune information spécifique confirmée pour l'instant.\n\nPATIENT DEMANDE: \"est ce que mon cas est tres...",
+        "response": "\"Votre cas d'urticaria ne semble pas être très grave pour l'instant. Nous n'avons pas détecté de signes alarmants qui pourraient indiquer une urgence médicale.\n\nCela est basé sur les informations que nous avons actuellement, qui ne montrent aucune complication majeure.\n\nPouvez-vous me dire depuis combien de temps vous avez remarqué l'apparition de ces démangeaisons et de ces plaques rouges sur votre peau ?\""
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:37:32.088715",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:38:32.353123",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:38:32.353123",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:38:36.219530",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 315,
+        "prompt_preview": "Le patient semble nier ou minimiser les symptômes.\n\nDIAGNOSTIC: Urticaria Hives\nOBSERVATIONS IMAGE: 1. Lesion Type: Urticaria hives presenting as pink, bumpy, and slightly itchy patches on the back.\n2...",
+        "response": "Je vous remercie de nous avoir contactés concernant vos démangeaisons cutanées. \nLes observations visuelles montrent des plaques roses, gonflées et légèrement démangeaisons sur votre dos. \nPouvez-vous nous dire si ces démangeaisons sont apparues simultanément ou si elles se sont étendues sur une période de temps ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:38:36.220532",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:39:09.167316",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 3,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:39:09.167316",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:39:12.699066",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 239,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Urticaria Hives\nPHASE: triggers\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPATIENT DIT: \"il ya de...",
+        "response": "Je vous remercie de partager ces informations avec moi. Vous avez mentionné que les symptômes d'urticaria ont commencé il y a presque deux jours. Pouvez-vous me décrire plus en détail les symptômes que vous avez ressentis depuis le début ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:39:12.700096",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:44:18.491559",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 4,
+          "nb_questions_asked": 2
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:44:18.491559",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "impact",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase impact → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:44:21.752148",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 229,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Urticaria Hives\nPHASE: impact\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPATIENT DIT: \"?\"\n\nSTRUCT...",
+        "response": "Je comprends que vous avez des démangeaisons et des plaques rouges sur la peau depuis deux jours. Pouvez-vous me décrire plus en détail les symptômes que vous ressentez, tels que leur aspect, leur localisation et leur intensité ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:44:21.753202",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:24.531255",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Dermatophytie",
+        "confidence": 0.2875525653362274,
+        "top3_predictions": [
+          {
+            "class": "Dermatophytie",
+            "confidence": 0.2875525653362274
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.1437762826681137
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.08626576960086822
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:30.763587",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to have a primary morphology of a dermatophytie infection, which is characterized by a red, inflamed, and itchy rash.\n2. Color & Appearance: The skin exhibits a bright red color with a slightly rough texture. The border of the affected area appears to be well-defined.\n3. Distribution Pattern: The infection appears to be symmetrical, affecting a large area of the back.\n4. Associated Signs: There is evidence of scratching on the affected skin, indicating an itchy and irritating condition.\n5. Severity Indicators: The extent of the infection appears to be moderate, but the acute nature of the rash suggests that it may have been present for a relatively short period.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:30.822799",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Dermatophytie 1. Lesion Type: The skin appears to have a primary morphology of a dermatophytie infection, which is",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.0389561330379049,
+          0.0389561330379049,
+          0.0389561330379049
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:30.822799",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:33.821834",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 311,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Dermatophytie (confiance 28.8%)\n- Observations: 1. Lesion Type: The skin appears to have a pr...",
+        "response": "Bonjour, je suis ravi de vous accueillir dans mon cabinet. Il semble que vous présentez une éruption cutanée rouge et irritée, qui pourrait être liée à une infection fongique. Cette infection est caractérisée par une peau rouge, enflammée et qui démange. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:56:33.822832",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:57:32.319158",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:57:32.319158",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:57:36.081902",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 249,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Dermatophytie\nPHASE: temporal\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPAT...",
+        "response": "Merci de nous avoir fourni ces informations. La dermatophytie est une infection fongique qui affecte la peau, les ongles ou les cheveux. Pouvez-vous décrire plus en détail les symptômes que vous ressentez, comme la douleur que vous avez mentionnée ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:57:36.083153",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:58:25.116302",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:58:25.116302",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:58:28.518353",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 275,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Dermatophytie\nPHASE: symptomatology\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n\nLACUNE PRIORITAIRE: Symptômes détaill...",
+        "response": "Je vous remercie de partager vos symptômes avec moi. Il est important de comprendre que les douleurs dans les taches peuvent être liées à la dermatophytie. Pouvez-vous me décrire plus en détail la nature de ces douleurs, par exemple, sont-elles constantes ou intermittentes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:58:28.518353",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:59:32.328849",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 3,
+          "nb_questions_asked": 2
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:59:32.328849",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:59:36.198100",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 333,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Dermatophytie\nPHASE: triggers\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPAT...",
+        "response": "Je vous remercie de partager ces informations. Pour la dermatophytie, il est possible de prendre certaines mesures à la maison pour soulager les symptômes, mais il est important de consulter un médecin pour un traitement approprié. Pouvez-vous me décrire plus en détail les douleurs que vous ressentez, sont-elles aiguës ou sourdes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T20:59:36.198100",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:11.026962",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 4,
+          "nb_questions_asked": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:11.026962",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "history",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase history → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:14.727722",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 294,
+        "prompt_preview": "Le patient semble nier ou minimiser les symptômes.\n\nDIAGNOSTIC: Dermatophytie\nOBSERVATIONS IMAGE: 1. Lesion Type: The skin appears to have a primary morphology of a dermatophytie infection, which is c...",
+        "response": "Je vois que vous avez des préoccupations concernant les taches sur votre peau. Sur l'image, il semble que vous avez une éruption cutanée rouge, enflammée et qui démange, caractéristique d'une infection dermatophytique. Pouvez-vous me dire depuis combien de temps vous avez remarqué ces taches ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:14.728785",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:41.045647",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 5,
+          "nb_questions_asked": 4
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:41.045647",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "impact",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase impact → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:45.859538",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 407,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Dermatophytie\nPHASE: impact\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPATIE...",
+        "response": "Je vous remercie de votre question. Il est possible de prendre certaines mesures à la maison pour soulager les symptômes de la dermatophytie, telles que l'application de pommades antifongiques ou le maintien de la peau propre et sèche. Cependant, il est essentiel de consulter un médecin pour un diagnostic et un traitement appropriés. Pouvez-vous me décrire plus en détail les douleurs que vous ressentez ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:45.860650",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:51.181114",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 313,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Dermatophytie\nPHASE: impact\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n\nLACUNE PRIORITAIRE: Symptômes détaillés\nPATIE...",
+        "response": "Je vois, vous cherchez à savoir si vous pouvez faire quelque chose à la maison pour traiter ces taches. En effet, il existe des remèdes maison qui peuvent aider à soulager les symptômes de la dermatophytie. Pouvez-vous me décrire plus en détail la douleur que vous ressentez, est-elle constante ou intermittente ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:04:51.182185",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:18:47.499132",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 6,
+          "nb_questions_asked": 5
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:18:47.499132",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (6 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:18:57.939657",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 638,
+        "prompt_preview": "Tu es un dermatologue qui donne des conseils pratiques.\n\nDIAGNOSTIC: Dermatophytie\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n🎯 Déclenchants: médicament\n\nPATIEN...",
+        "response": "Je comprends votre inquiétude et je vais vous fournir des conseils pratiques pour gérer votre situation.\n\nVoici quelques mesures immédiates que vous pouvez prendre :\n\n*   Lavez régulièrement la zone affectée avec un savon doux et séchez-la soigneusement pour éviter la propagation de l'infection.\n*   Évitez de gratter ou de toucher la zone affectée pour ne pas aggraver l'infection.\n*   Si vous ressentez une douleur intense, une démangeaison insupportable ou si les symptômes s'aggravent, consultez immédiatement un médecin.\n\nJe vous recommande vivement de consulter un dermatologue pour obtenir un traitement approprié et personnalisé."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T21:18:57.941771",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:44.300609",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.8426357507705688,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.8426357507705688
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4213178753852844
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.25279072523117063
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:46.022738",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "The image depicts a healthy human hand with a fingernail. The hand is clean and free of any visible skin lesions or abnormalities. The fingernail appears to be well-maintained and free of any signs of damage or infection. The overall appearance of the hand is that of a healthy individual.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:46.135926",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy The image depicts a healthy human hand with a fingernail. The hand is clean and free of any visible ",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.014331879136876925,
+          0.014331879136876925,
+          0.014331879136876925
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:46.137008",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:48.985751",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 331,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Heathy (confiance 84.3%)\n- Observations: The image depicts a healthy human hand with a finger...",
+        "response": "Bonjour, merci de vous être présenté à mon cabinet aujourd'hui. Votre main semble être en bonne santé, sans aucune lésion cutanée visible. Votre ongle est également bien entretenu et ne présente aucun signe d'infection ou de dommage. Pouvez-vous me dire depuis quand vous avez remarqué que votre main était dans cet état de santé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:07:48.987872",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:08:29.855659",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [],
+          "intensity": {
+            "douleur": "intense"
+          }
+        },
+        "context": {
+          "triggers": [
+            "médicament"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 7,
+          "nb_questions_asked": 5
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:08:29.855659",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:08:33.427077",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 315,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Heathy\nPHASE: temporal\nINFORMATIONS: 📋 INFORMATIONS COLLECTÉES:\n⏱️  Durée: deux jour\n✅ Symptômes: douleur\n🎯 Déclenchants: médicament\n\nLACUNE PRIORITAIRE: Sym...",
+        "response": "Merci pour votre commentaire. Je comprends que vous avez des doutes sur votre diagnostic de santé. Le diagnostic indique que vous êtes en bonne santé, mais il est important de clarifier certains points pour mieux comprendre votre situation. Pouvez-vous me décrire plus en détail la douleur que vous avez ressentie ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:08:33.427077",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:40:59.293711",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.8426357507705688,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.8426357507705688
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4213178753852844
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.25279072523117063
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:41:00.698402",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "The image displays a healthy human hand with well-defined, clear nail beds and a clean, unblemished skin surface. The fingers are clearly visible, and the overall appearance of the hand is normal and unblemished.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:41:00.798911",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy The image displays a healthy human hand with well-defined, clear nail beds and a clean, unblemished ",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.014489533359466494,
+          0.014489533359466494,
+          0.014489533359466494
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:41:00.800080",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:41:03.454754",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 300,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Heathy (confiance 84.3%)\n- Observations: The image displays a healthy human hand with well-de...",
+        "response": "Bienvenue dans mon cabinet, je suis ravi de vous aider. Votre main semble être en parfait état, avec des ongles bien définis et une peau claire et saine. Je n'observe aucun signe de lésion ou d'anomalie visible. Pouvez-vous me dire pourquoi vous avez décidé de consulter un dermatologue aujourd'hui ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:41:03.454754",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:38.449393",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.8426357507705688,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.8426357507705688
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4213178753852844
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.25279072523117063
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:39.981421",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "The image displays a healthy, unblemished hand with a clean, unblemished skin. The fingernails are well-groomed and clean. There are no signs of infection, inflammation, or other skin abnormalities. The skin appears to be clear and free of any visible lesions or discoloration.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:40.067028",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy The image displays a healthy, unblemished hand with a clean, unblemished skin. The fingernails are w",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.01415958419184923,
+          0.01415958419184923,
+          0.01415958419184923
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:40.067028",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:42.277560",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 246,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Heathy (confiance 84.3%)\n- Observations: The image displays a healthy, unblemished hand with ...",
+        "response": "Bienvenue dans mon cabinet, je suis ravi de vous aider. Votre main semble en parfaite santé, la peau est propre et sans aucune lésion visible. Vos ongles sont également bien soignés. Pouvez-vous me dire ce qui vous amène à consulter aujourd'hui ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:42:42.277560",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:35.389222",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.8426357507705688,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.8426357507705688
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4213178753852844
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.25279072523117063
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:36.560853",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "The image displays a healthy, unblemished skin with no visible lesions or abnormalities. The skin appears to be smooth and free of any signs of inflammation, discoloration, or other irregularities.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:36.614388",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy The image displays a healthy, unblemished skin with no visible lesions or abnormalities. The skin ap",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.01593097291459916,
+          0.01593097291459916,
+          0.01593097291459916
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:36.614388",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:39.380896",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 327,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Heathy (confiance 84.3%)\n- Observations: The image displays a healthy, unblemished skin with ...",
+        "response": "Bienvenue dans mon cabinet, je suis ravi de vous aider à prendre soin de votre peau. Votre peau semble être en excellent état, sans aucune lésion ni anomalie visible. Elle apparaît lisse et exempte de tout signe d'inflammation ou de discoloration. Pouvez-vous me dire comment vous avez pris soin de votre peau jusqu'à présent ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:39.381943",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:56.958439",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:51:56.958439",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase temporal → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:52:15.117526",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:52:15.117526",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase symptomatology → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:27.711575",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.8426357507705688,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.8426357507705688
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4213178753852844
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.25279072523117063
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:29.844445",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Healthy skin with no visible abnormalities or signs of disease.\n2. Color & Appearance: The skin appears to be clear, smooth, and free of any discoloration or blemishes.\n3. Distribution Pattern: The skin appears to be evenly distributed with no noticeable patterns or asymmetries.\n4. Associated Signs: No visible signs of scratching, inflammation, or discharge.\n5. Severity Indicators: The skin appears to be in good health, with no indications of acute or chronic issues.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:29.912493",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy 1. Lesion Type: Healthy skin with no visible abnormalities or signs of disease.\n2. Color & Appearanc",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.017939512723898317,
+          0.017939512723898317,
+          0.017939512723898317
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:29.912493",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:32.936224",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 343,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Heathy (confiance 84.3%)\n- Observations: 1. Lesion Type: Healthy skin with no visible abnorma...",
+        "response": "Bienvenue dans mon cabinet, je suis ravi de vous aider à prendre soin de votre peau. Votre peau semble être en excellent état, sans aucune lésion visible ni signe de maladie. Elle est claire, lisse et sans aucune discoloration ou imperfection. Pouvez-vous me dire depuis combien de temps vous avez remarqué que votre peau était dans cet état ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T22:59:32.936224",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:00.771546",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:00.771546",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée/Début",
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants"
+        ],
+        "reasoning": "Phase temporal → temporal. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:03.404481",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 268,
+        "prompt_preview": "Tu es un dermatologue qui examine une peau SAINE.\n\nCONTEXTE:\n- Classification: Heathy (0.0/10)\n- Observations: 1. Lesion Type: Healthy skin with no visible abnormalities or signs of disease.\n2. Color ...",
+        "response": "\"Votre peau est en excellente santé, aucune anomalie n'est visible. Les observations montrent une peau claire, lisse et exempte de tout signe de maladie. Cela confirme que votre peau est parfaitement saine. Souhaitez-vous que j'examine une autre zone de votre corps ?\""
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:03.404481",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:42.500698",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Gale",
+        "confidence": 0.2681419253349304,
+        "top3_predictions": [
+          {
+            "class": "Gale",
+            "confidence": 0.2681419253349304
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.1340709626674652
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.08044257760047913
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:47.890766",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to be affected by a mild, chronic inflammatory process, characterized by small, red, pink, or yellowish papules or pustules.\n2. Color & Appearance: The skin lesions are small, red or pink, with a slightly rough surface texture. The border is often slightly elevated or raised.\n3. Distribution Pattern: The lesions are distributed in a somewhat linear or linear-arranged pattern, covering a significant portion of the skin.\n4. Associated Signs: There is no evidence of scratching, inflammation, or discharge visible in the image.\n5. Severity Indicators: The extent of the skin lesions appears to be moderate, affecting a significant portion of the skin, but not severe enough to warrant a diagnosis.\n\nThe presence of multiple small, red or pink papules or pustules on the skin suggests a mild, chronic inflammatory process, possibly related to an autoimmune disorder or a skin condition such as acne or rosacea. However, a definitive diagnosis cannot be made based solely on the image.",
+        "structured_data": {
+          "lesion_type": [
+            "papule",
+            "pustule"
+          ],
+          "colors": [
+            "red",
+            "pink"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:47.949678",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Gale 1. Lesion Type: The skin appears to be affected by a mild, chronic inflammatory process, characteriz",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.024148607381545676,
+          0.024148607381545676,
+          0.024148607381545676
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:47.949678",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 9.1,
+        "level": "critique",
+        "detected_flags": [
+          {
+            "keyword": "pus",
+            "level": "élevée",
+            "score": 7
+          }
+        ],
+        "recommendation": "Consultation médicale dans les 24h recommandée",
+        "should_see_doctor_urgently": true
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:51.075353",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 368,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Gale (confiance 26.8%)\n- Observations: 1. Lesion Type: The skin appears to be affected by a m...",
+        "response": "Bonjour, je suis là pour vous aider et je vais faire de mon mieux pour comprendre votre problème de peau. Il semble que vous avez des lésions cutanées rouges ou roses, légèrement rugueuses, qui pourraient être liées à un processus inflammatoire chronique. Ces lésions peuvent être désagréables et préoccupantes. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:51.075353",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:54.165423",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 360,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Gale (confiance 26.8%)\n- Observations: 1. Lesion Type: The skin appears to be affected by a m...",
+        "response": "Bonjour, je suis désolé de voir que vous traversez cette période difficile avec votre peau. Il semble que vous ayez des lésions cutanées rouges ou roses, légèrement rugueuses, qui pourraient être liées à un processus inflammatoire chronique. Ces lésions peuvent être gênantes et affecter votre quotidien. Depuis combien de temps avez-vous remarqué ces lésions?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:00:54.165423",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:03:07.527107",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:03:07.527107",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "urgent_refer",
+        "current_phase": "conclusion",
+        "reasoning": "Urgence critique (9.1/10)",
+        "information_gaps": [],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:03:13.357620",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 555,
+        "prompt_preview": "SITUATION D'URGENCE MÉDICALE\n\nALERTE: Score 9.1/10\nPATIENT DIT: \"est ce que c'es tres grave ?\"\n\nSTRUCTURE OBLIGATOIRE:\n1. Reconnaissance gravité (1 phrase ferme)\n2. Explication danger (2 phrases)\n3. A...",
+        "response": "\"Oui, votre situation est très grave. Vous présentez des symptômes qui nécessitent une attention médicale immédiate, car il y a un risque de complications sérieuses si vous n'êtes pas traité rapidement. Votre vie est en danger.\n\nACTION IMMÉDIATE : Contactez le 15 (SAMU) ou rendez-vous aux urgences MAINTENANT.\n\nSurveillez vos signes vitaux, notamment votre rythme cardiaque et votre respiration. Si vous ressentez des douleurs thoraciques ou des difficultés à respirer, cela peut empirer rapidement.\n\nPouvez-vous vous rendre aux urgences immédiatement ?\""
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:03:13.358654",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:48.786287",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Impétigo",
+        "confidence": 0.7666522860527039,
+        "top3_predictions": [
+          {
+            "class": "Impétigo",
+            "confidence": 0.7666522860527039
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.38332614302635193
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.22999568581581115
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:50.988234",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion type: Impétigo, characterized by a pus-filled, crusty lesion with a central dimple.\n2. Color and appearance: The lesion is red, with a rough surface and a central dimple.\n3. Distribution pattern: The lesion is located on the lower abdomen, covering a significant portion of the skin.\n4. Associated signs: There is evidence of scratching, inflammation, and discharge from the lesion.\n5. Severity indicators: The lesion appears to be quite severe, covering a large area of the skin and displaying advanced characteristics.",
+        "structured_data": {
+          "lesion_type": [
+            "crust"
+          ],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:51.041893",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Impétigo 1. Lesion type: Impétigo, characterized by a pus-filled, crusty lesion with a central dimple.\n2. Col",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.031967279585043876,
+          0.031967279585043876,
+          0.031967279585043876
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:51.041893",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 7.0,
+        "level": "élevée",
+        "detected_flags": [
+          {
+            "keyword": "pus",
+            "level": "élevée",
+            "score": 7
+          }
+        ],
+        "recommendation": "Consultation médicale dans les 24h recommandée",
+        "should_see_doctor_urgently": true
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:54.211539",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 374,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Impétigo (confiance 76.7%)\n- Observations: 1. Lesion type: Impétigo, characterized by a pus-f...",
+        "response": "Bonjour, je suis là pour vous aider et je vais faire de mon mieux pour comprendre votre problème de peau. Il semble que vous avez une lésion cutanée sur le bas de votre abdomen qui est rouge, avec une surface rugueuse et un petit creux au centre. Cette lésion est également remplie de pus et recouverte d'une croûte. Depuis combien de temps avez-vous remarqué cette lésion ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:54.211539",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:57.203815",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 330,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Impétigo (confiance 76.7%)\n- Observations: 1. Lesion type: Impétigo, characterized by a pus-f...",
+        "response": "Bonjour, je suis ravi de vous aider avec votre problème de peau. Il semble que vous avez une lésion cutanée sur le bas de l'abdomen qui est rouge, avec une surface rugueuse et un petit creux au centre. Cette lésion ressemble à un type d'infection cutanée appelée impétigo. Depuis combien de temps avez-vous remarqué cette lésion ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:04:57.204871",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:30.096374",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 3,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:30.096374",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:34.494007",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 482,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Impétigo\nURGENCE: 7.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n', 'structured': {'temporal_info': {'dur...",
+        "response": "Ne vous inquiétez pas, l'impétigo est généralement une affection cutanée bénigne qui peut être traitée efficacement. Il n'y a pas lieu de s'inquiéter outre mesure pour le moment.\n\nL'impétigo est une infection cutanée courante qui se manifeste souvent par des cloques ou des croûtes sur la peau, et son apparition soudaine chez vous correspond à un début typique de cette affection.\n\nPouvez-vous me dire si vous avez remarqué des démangeaisons ou des douleurs dans la zone affectée ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:34.494007",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:38.446031",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 469,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Impétigo\nURGENCE: 7.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n', 'structured': {'temporal_info': {'dur...",
+        "response": "Ne vous inquiétez pas, l'impétigo est généralement une affection cutanée bénigne qui peut être traitée facilement. Il est peu probable que cela soit très grave, surtout si vous intervenez tôt.\n\nL'impétigo est une infection cutanée courante, souvent causée par des bactéries, et les symptômes que vous avez décrits sont typiques de cette affection.\n\nPouvez-vous me dire si vous avez remarqué une quelconque plaie ou éruption cutanée avant l'apparition de ces symptômes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:05:38.447028",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:06:18.340614",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 4,
+          "nb_questions_asked": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:06:18.341643",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Facteurs déclenchants",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 4"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:06:20.605848",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 200,
+        "prompt_preview": "Le patient semble nier ou minimiser les symptômes.\n\nDIAGNOSTIC: Impétigo\nOBSERVATIONS IMAGE: 1. Lesion type: Impétigo, characterized by a pus-filled, crusty lesion with a central dimple.\n2. Color and ...",
+        "response": "Je vois. Vous avez une lésion qui ressemble à de l'impétigo, avec une croûte et un pus au centre. Pouvez-vous me dire si vous avez ressenti de la douleur ou de la démangeaison autour de cette lésion ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:06:20.605848",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:11:38.581259",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 5,
+          "nb_questions_asked": 2
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:11:38.581259",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:11:41.735417",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 340,
+        "prompt_preview": "Le patient semble nier ou minimiser les symptômes.\n\nDIAGNOSTIC: Impétigo\nOBSERVATIONS IMAGE: 1. Lesion type: Impétigo, characterized by a pus-filled, crusty lesion with a central dimple.\n2. Color and ...",
+        "response": "Je vois que vous avez une lésion cutanée qui ressemble à de l'impétigo, caractérisée par une croûte jaune et une zone rouge autour. Vous avez mentionné que vous n'avez pas de douleur, mais vous vous demandez si vous pouvez vous soigner à la maison avec un produit. Pouvez-vous me dire si vous avez déjà utilisé un produit sur cette lésion ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:11:41.735417",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:04.112442",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 6,
+          "nb_questions_asked": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:04.112442",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:09.055725",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 588,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n❌ Symptômes absents: douleur\\n🎯 Déclencha...",
+        "response": "Merci de m'avoir fourni ces informations précieuses au cours de notre consultation.\n\nEn résumé, vous avez présenté une lésion cutanée depuis deux jours sans douleur, et vous avez mentionné avoir utilisé un produit sur cette zone. \n\nCes éléments suggèrent un diagnostic probable d'impétigo, avec une certitude élevée.\n\nPour traiter cette affection, je vous recommande d'appliquer une crème antibactérienne sur la lésion, de maintenir une bonne hygiène de la peau et d'éviter de partager des objets personnels. \n\nAvez-vous d'autres questions concernant votre traitement ou votre affection ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:09.063375",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:38.135746",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 7,
+          "nb_questions_asked": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:38.135746",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (5 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:42.934669",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 584,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: Impétigo\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n❌ Symptômes absents: douleur\\n🎯 Déclencha...",
+        "response": "Merci de m'avoir fourni ces informations précieuses pendant notre consultation. \n\nPour résumer, vous avez présenté une lésion cutanée depuis deux jours, sans douleur, et vous avez récemment utilisé un produit sur cette zone. \n\nCela me conduit à penser qu'il s'agit probablement d'un impétigo, avec une certitude élevée. \n\nJe vous recommande de ne pas utiliser de produits supplémentaires sur la lésion pour le moment, de maintenir une bonne hygiène et de revenir me voir si les symptômes persistent ou s'aggravent. \n\nAvez-vous d'autres questions avant de terminer notre consultation ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:12:42.935734",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:31.968302",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Impétigo",
+        "confidence": 0.7666522860527039,
+        "top3_predictions": [
+          {
+            "class": "Impétigo",
+            "confidence": 0.7666522860527039
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.38332614302635193
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.22999568581581115
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:35.259366",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Impétigo with secondary changes\n2. Color & Appearance: Reddish-brown, pustular, with a yellowish hue\n3. Distribution Pattern: Circular, with a central pustule\n4. Associated Signs: Pustules, erythema, and mild inflammation\n5. Severity Indicators: Mild to moderate, with a limited distribution\n\nImpétigo is a common bacterial infection that causes small, pustular lesions on the skin. The color of the lesions is often reddish-brown, with a yellowish hue, and they have a pustular surface texture. The distribution pattern of the lesions is usually circular, with a central pustule. The associated signs of impétigo include pustules, erythema (redness), and mild inflammation. The severity of the condition can range from mild to moderate, depending on the extent of the infection and the affected region.",
+        "structured_data": {
+          "lesion_type": [
+            "pustule"
+          ],
+          "colors": [
+            "red",
+            "brown"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:35.316791",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Impétigo 1. Lesion Type: Impétigo with secondary changes\n2. Color & Appearance: Reddish-brown, pustular, with",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.025860917463557617,
+          0.025860917463557617,
+          0.025860917463557617
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:35.316791",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 7.0,
+        "level": "élevée",
+        "detected_flags": [
+          {
+            "keyword": "pus",
+            "level": "élevée",
+            "score": 7
+          }
+        ],
+        "recommendation": "Consultation médicale dans les 24h recommandée",
+        "should_see_doctor_urgently": true
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:38.421779",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 366,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Impétigo (confiance 76.7%)\n- Observations: 1. Lesion Type: Impétigo with secondary changes 2....",
+        "response": "Bonjour, je suis ravi de vous aider avec votre problème de peau. Il semble que vous avez des lésions cutanées qui présentent des caractéristiques d'impétigo, avec des pustules rouges-brunâtres et une inflammation légère. Ces lésions sont disposées en cercle avec un pus jaunâtre au centre. Pouvez-vous me dire depuis combien de temps vous avez remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:38.421779",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:41.380493",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 351,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Impétigo (confiance 76.7%)\n- Observations: 1. Lesion Type: Impétigo with secondary changes 2....",
+        "response": "Bonjour, je suis ravi de vous accueillir dans mon cabinet. Il semble que vous présentez des lésions cutanées qui pourraient être liées à une infection bactérienne, avec des pustules et une inflammation. Ces lésions ont une couleur rouge-brun et une apparence pustuleuse avec un centre jaunâtre. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:24:41.380493",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:27.406121",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 8,
+          "nb_questions_asked": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:27.406121",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:29.389303",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 196,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Impétigo\nPHASE: temporal\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES (LIS ATTENTIVEMENT):\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n❌ Symptômes absents...",
+        "response": "Je comprends que vous souhaitez mettre fin à la consultation pour le moment. Pouvez-vous me dire si vous avez remarqué une démangeaison ou une sensation de brûlure autour de la lésion d'impétigo ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:29.389303",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:44.282645",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 9,
+          "nb_questions_asked": 4
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:44.282645",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:46.605470",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 229,
+        "prompt_preview": "Le patient semble nier ou minimiser les symptômes.\n\nDIAGNOSTIC: Impétigo\nOBSERVATIONS IMAGE: 1. Lesion Type: Impétigo with secondary changes\n2. Color & Appearance: Reddish-brown, pustular, with a yell...",
+        "response": "J'ai bien noté vos commentaires. La lésion visible sur l'image présente une couleur rouge-brun avec des pustules et une teinte jaunâtre. Pouvez-vous me dire si vous avez remarqué une odeur particulière provenant de cette lésion ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:25:46.606467",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:41.493949",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "drug reactions",
+        "confidence": 0.8134253025054932,
+        "top3_predictions": [
+          {
+            "class": "drug reactions",
+            "confidence": 0.8134253025054932
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4067126512527466
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.24402759075164793
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:43.839426",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to be affected by an inflammatory process, possibly a drug reaction.\n2. Color & Appearance: The skin is red and covered in small bumps, giving it a rough texture.\n3. Distribution Pattern: The lesions are distributed across the chest and back, covering a significant area.\n4. Associated Signs: There is no evidence of scratching, inflammation, or discharge in the image.\n5. Severity Indicators: The lesions appear to be relatively mild in severity, with no signs of severe acute or chronic inflammation.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:43.896921",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "drug reactions 1. Lesion Type: The skin appears to be affected by an inflammatory process, possibly a drug reaction",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.028300742022171275,
+          0.028300742022171275,
+          0.028300742022171275
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:43.896921",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:46.918776",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 362,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: drug reactions (confiance 81.3%)\n- Observations: 1. Lesion Type: The skin appears to be affec...",
+        "response": "Bonjour, je suis ravi de vous aider et je vais faire de mon mieux pour comprendre ce que vous vivez. Il semble que votre peau soit enflammée et présente de petites bosses rouges, ce qui peut être le signe d'une réaction à un médicament. Ces lésions sont réparties de manière assez uniforme sur votre peau. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:46.918776",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:50.018028",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 389,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: drug reactions (confiance 81.3%)\n- Observations: 1. Lesion Type: The skin appears to be affec...",
+        "response": "Bonjour, je suis ravi de vous accueillir dans mon cabinet et je vais faire de mon mieux pour vous aider. Il semble que vous ayez une réaction cutanée qui se manifeste par des rougeurs et des petits boutons sur la peau. Cette réaction peut être due à une variété de causes, notamment une réaction à un médicament. Pouvez-vous me dire depuis combien de temps vous avez remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:53:50.018028",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:21.840761",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 10,
+          "nb_questions_asked": 5
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:21.840761",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:25.357410",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 404,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: drug reactions\nURGENCE: 0.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n❌ Symptômes absents: douleur\\n🎯 Dé...",
+        "response": "Votre cas ne semble pas très grave pour le moment. Les symptômes que vous avez décrits jusqu'à présent ne suggèrent pas une situation d'urgence.\n\nCela est dû au fait que vous n'avez signalé aucune douleur et que les symptômes ont commencé il y a seulement deux jours après l'utilisation d'un produit.\n\nPouvez-vous me dire si vous avez déjà éprouvé des réactions allergiques à des produits dans le passé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:25.357410",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (368 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:29.360521",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 501,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: drug reactions\nURGENCE: 0.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n❌ Symptômes absents: douleur\\n🎯 Dé...",
+        "response": "Je comprends votre inquiétude, mais d'après les informations que vous m'avez fournies, votre cas ne semble pas être très grave. Les symptômes que vous avez décrits sont relativement légers et ne présentent pas de signes d'alerte majeurs.\n\nCela étant dit, il est important de noter que vous avez mentionné avoir utilisé un produit qui a pu déclencher une réaction.\n\nPouvez-vous me dire si vous avez remarqué une amélioration ou une aggravation de vos symptômes depuis que vous avez utilisé ce produit ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:54:29.360521",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:02.387905",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 11,
+          "nb_questions_asked": 6
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:02.387905",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:05.759410",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 219,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: drug reactions\nPHASE: symptomatology\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES (LIS ATTENTIVEMENT):\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Sympt...",
+        "response": "Merci de nous avoir fourni ces informations. Je comprends que vous avez ressenti des douleurs depuis deux jours. Pouvez-vous me décrire plus en détail la nature de ces douleurs, sont-elles constantes ou intermittentes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:05.759410",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:55.523258",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 12,
+          "nb_questions_asked": 7
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:55:55.523258",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:00.999848",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 550,
+        "prompt_preview": "Le patient demande que faire/comment traiter.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes absents...",
+        "response": "Je comprends votre besoin de conseils pour gérer les douleurs intermittentes liées à la réaction cutanée. Vous pouvez essayer d'appliquer une compresse froide sur la zone affectée pour réduire la douleur et l'inflammation. Il est également possible d'utiliser un produit calmant topique, mais il est préférable de consulter un médecin pour obtenir des conseils personnalisés et éviter toute réaction allergique. Je vous recommande de consulter un médecin pour un avis professionnel. Ces premiers conseils vous semblent-ils applicables immédiatement ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:00.999848",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:32.873577",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 13,
+          "nb_questions_asked": 8
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:32.873577",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:36.566352",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 433,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez des symptômes depuis deux jours, notamment une douleur, qui semblent être liés à l'utilisation d'un produit. Cela évoque fortement une réaction cutanée aux médicaments, avec une bonne certitude diagnostique. Je vous recommande de consulter un dermatologue pour un traitement adapté et d'éviter d'utiliser ce produit à l'avenir. Avez-vous d'autres questions sur cette affection ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:56:36.566352",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:14.171255",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 14,
+          "nb_questions_asked": 9
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:14.171255",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (5 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:20.188251",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 432,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez une réaction cutanée depuis deux jours avec des douleurs légères, déclenchée par un produit. Cela évoque fortement une réaction allergique à un produit, avec une bonne certitude diagnostique. Je vous recommande d'éviter tout contact avec le produit en question et de consulter un dermatologue pour un traitement adapté. Avez-vous d'autres questions sur cette réaction cutanée ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:20.188251",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:42.858933",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 15,
+          "nb_questions_asked": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:42.858933",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (6 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:47.326116",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 517,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez des symptômes de réaction cutanée depuis deux jours, avec une douleur légère et un produit comme déclenchant. Cela évoque fortement une réaction cutanée à un produit, avec une bonne certitude diagnostique. Je vous recommande de cesser l'utilisation du produit en question et d'appliquer des mesures de soins pour calmer la peau. Il est également important de consulter un dermatologue pour un traitement adapté. Avez-vous d'autres questions sur cette affection ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T23:57:47.326116",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:07.993393",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Eczema Photos",
+        "confidence": 0.9313291907310486,
+        "top3_predictions": [
+          {
+            "class": "Eczema Photos",
+            "confidence": 0.9313291907310486
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4656645953655243
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.27939875721931456
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:10.420415",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: Eczematous lesion with a red, scaly, and itchy appearance.\n2. Color & Appearance: The skin exhibits a bright red hue, with a rough and scaly texture.\n3. Distribution Pattern: The lesion is located on the upper arm and appears to be symmetrical.\n4. Associated Signs: There is evidence of scratching on the skin, suggesting an itchy sensation.\n5. Severity Indicators: The lesion appears to be moderately severe, covering a significant portion of the skin.\n\nPlease note that a definitive diagnosis cannot be made solely from the image, and further evaluation by a dermatologist is recommended.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:10.479876",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Eczema Photos 1. Lesion Type: Eczematous lesion with a red, scaly, and itchy appearance.\n2. Color & Appearance: Th",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.027658432955384126,
+          0.027658432955384126,
+          0.027658432955384126
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:10.479876",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:13.404743",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 357,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Eczema Photos (confiance 93.1%)\n- Observations: 1. Lesion Type: Eczematous lesion with a red,...",
+        "response": "Bonjour, je suis ravi de vous aider et de vous apporter les soins dont vous avez besoin. Il semble que vous souffrez d'une éruption cutanée qui présente des plaques rouges et squameuses, principalement sur le haut du bras. Cette affection cutanée peut être assez gênante et vous démange probablement. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:13.404743",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:16.552301",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 379,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: Eczema Photos (confiance 93.1%)\n- Observations: 1. Lesion Type: Eczematous lesion with a red,...",
+        "response": "Bonjour, je suis ravi de vous aider à comprendre ce qui se passe avec votre peau. Il semble que vous avez une lésion cutanée qui présente des caractéristiques d'eczéma, avec une couleur rouge vif et une texture rugueuse et squameuse. Cette lésion est localisée sur votre bras supérieur. Pouvez-vous me dire depuis combien de temps vous avez remarqué l'apparition de ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:12:16.553348",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:14:59.471711",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 16,
+          "nb_questions_asked": 11
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:14:59.471711",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:03.218148",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 358,
+        "prompt_preview": "Le patient s'inquiète de la gravité.\n\nDIAGNOSTIC: Eczema Photos\nURGENCE: 0.0/10\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Votre cas ne semble pas très grave, car les symptômes que vous avez décrits sont relativement légers et ne présentent pas de signes d'alarme. Les informations que vous avez fournies suggèrent que votre eczéma photos est probablement une réaction cutanée à un produit.\n\nPouvez-vous me dire si vous avez déjà eu des réactions cutanées similaires par le passé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:03.218148",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:18.394011",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 17,
+          "nb_questions_asked": 12
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:18.396046",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:20.899025",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 268,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Eczema Photos\nPHASE: symptomatology\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES (LIS ATTENTIVEMENT):\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptô...",
+        "response": "Merci pour votre mise à jour, vous avez donc remarqué ces symptômes il y a presque 3 jours. Je vais prendre cela en compte pour mieux comprendre votre situation. Pouvez-vous me décrire plus en détail la nature de ces douleurs, sont-elles constantes ou intermittentes ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:20.900302",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop courte (52 < 80 car)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:22.896624",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 227,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Eczema Photos\nPHASE: symptomatology\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES (LIS ATTENTIVEMENT):\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptô...",
+        "response": "Je vous remercie pour votre réponse. Vous avez mentionné que les symptômes sont apparus il y a presque 3 jours. Pouvez-vous me décrire plus en détail la nature des démangeaisons ou des sensations de brûlure que vous ressentez ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:22.896624",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:52.486230",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 18,
+          "nb_questions_asked": 13
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:52.487606",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:56.437046",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 405,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: Eczema Photos\nOBSERVATIONS: 1. Lesion Type: Eczematous lesion with a red, scaly, and itchy appearance.\n2. Color & Appearance: The skin exhibits a ...",
+        "response": "Vous avez un eczéma photos, c'est une réaction cutanée qui apparaît après une exposition au soleil ou à certains produits. Vos symptômes, tels que la douleur et la démangeaison, sont typiques de cette affection. L'eczéma photos se caractérise par une inflammation de la peau qui provoque des lésions rouges et squameuses. Avez-vous déjà utilisé des crèmes ou des pommades pour soulager les démangeaisons ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:56.445799",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (382 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:59.794459",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 377,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: Eczema Photos\nOBSERVATIONS: 1. Lesion Type: Eczematous lesion with a red, scaly, and itchy appearance.\n2. Color & Appearance: The skin exhibits a ...",
+        "response": "Vous avez un eczéma photos, c'est une réaction cutanée qui apparaît lorsque votre peau est exposée à certaines substances ou à la lumière. Vos symptômes, tels que la douleur et la démangeaison, sont liés à cette réaction. Il semble que votre peau réagisse à un produit que vous avez utilisé. Avez-vous essayé d'appliquer de la crème hydratante pour soulager les démangeaisons ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:15:59.795494",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (352 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:16:02.917946",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 377,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: Eczema Photos\nOBSERVATIONS: 1. Lesion Type: Eczematous lesion with a red, scaly, and itchy appearance.\n2. Color & Appearance: The skin exhibits a ...",
+        "response": "Vous avez un eczéma photos, c'est une réaction de votre peau à un produit que vous avez utilisé. Les lésions rouges, squameuses et démangeantes que vous avez sont typiques de cette affection. Votre peau est en train de réagir en défense contre le produit, ce qui provoque ces symptômes. Pouvez-vous me dire si vous avez déjà eu des réactions cutanées similaires dans le passé ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:16:02.918942",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:17:18.249659",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 19,
+          "nb_questions_asked": 14
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:17:18.249659",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null,
+        "force_answer_patient_question": true
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:17:24.852771",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 289,
+        "prompt_preview": "Continuation de consultation.\n\nDIAGNOSTIC: Eczema Photos\nPHASE: conclusion\n\n📋 INFORMATIONS DÉJÀ COLLECTÉES (LIS ATTENTIVEMENT):\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes:...",
+        "response": "Merci pour votre message. Je comprends que vous cherchez à prendre un calmant pour soulager vos symptômes. Cependant, avant de vous conseiller quoi que ce soit, je voudrais en savoir plus sur vos symptômes. Pouvez-vous me décrire plus en détail la nature de la douleur que vous ressentez ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T00:17:24.852771",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:12.576417",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "drug reactions",
+        "confidence": 0.8134253025054932,
+        "top3_predictions": [
+          {
+            "class": "drug reactions",
+            "confidence": 0.8134253025054932
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.4067126512527466
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.24402759075164793
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:19.724747",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to be affected by a drug reaction, characterized by a red, itchy, and inflamed appearance.\n2. Color & Appearance: The skin is red and has a rough, bumpy texture, with a well-defined border.\n3. Distribution Pattern: The affected area is located on the chest and extends across the upper body.\n4. Associated Signs: There is evidence of scratching and inflammation, which is consistent with a drug reaction.\n5. Severity Indicators: The severity of the reaction appears to be mild to moderate, as it is not severe enough to warrant hospitalization.\n6. Drug Reaction: The reaction is likely due to an allergic response to a medication or other substance.\n7. Treatment: Treatment for drug reactions typically involves discontinuing the medication or substance causing the reaction and using over-the-counter antihistamines or corticosteroids to alleviate symptoms.\n8. Follow-up: Follow-up with a healthcare provider is recommended to determine the cause of the reaction and to ensure that the patient is not at risk for future reactions.\n9. Prevention: Prevention of drug reactions involves being aware of the medications and substances to which the individual is allergic and following the healthcare provider's instructions for taking medications.\n10. Complications: Complications of drug reactions can include anaphylaxis, which is a severe allergic reaction that can be life-threatening if not treated promptly.\n11. Other Diagnoses: Other possible diagnoses for this skin reaction include eczema, psoriasis, or contact dermatitis.\n12. Dermatology Consult: A consult with a dermatologist may be necessary to confirm the diagnosis and to develop an appropriate treatment plan.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [
+            "red"
+          ],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:19.796789",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "drug reactions 1. Lesion Type: The skin appears to be affected by a drug reaction, characterized by a red, itchy, a",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.026790653562809245,
+          0.026790653562809245,
+          0.026790653562809245
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:19.796789",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:22.913798",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 371,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: drug reactions (confiance 81.3%)\n- Observations: 1. Lesion Type: The skin appears to be affec...",
+        "response": "Bonjour, je suis désolé de voir que vous traversez cette période difficile avec votre peau. Il semble que vous avez une réaction cutanée qui se manifeste par des rougeurs, des démangeaisons et une inflammation. La peau affectée est rouge, avec une texture rugueuse et bosselée, et présente une limite bien définie. Depuis combien de temps avez-vous remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:22.914856",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:25.830513",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 372,
+        "prompt_preview": "Tu es un dermatologue francophone expert qui accueille un patient.\n\nCONTEXTE DIAGNOSTIC:\n- Classification: drug reactions (confiance 81.3%)\n- Observations: 1. Lesion Type: The skin appears to be affec...",
+        "response": "Bonjour, je suis là pour vous aider et comprendre ce que vous traversez. Il semble que vous avez une réaction cutanée qui se manifeste par des rougeurs, des démangeaisons et une inflammation. La peau affectée est rouge, avec une texture rugueuse et bosselée, et présente une limite bien définie. Pouvez-vous me dire depuis combien de temps vous avez remarqué ces lésions ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:25.830513",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "CRITIQUE: Aucune question (dialogue doit continuer)"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:55.718194",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 20,
+          "nb_questions_asked": 15
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:55.719666",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase temporal → symptomatology. Lacunes: 3"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:59.785926",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 453,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: drug reactions\nOBSERVATIONS: 1. Lesion Type: The skin appears to be affected by a drug reaction, characterized by a red, itchy, and inflamed appea...",
+        "response": "Il semble que vous ayez une réaction cutanée à un produit, ce qui signifie que votre peau réagit de manière excessive à une substance que vous avez utilisée. Cela explique les rougeurs, les démangeaisons et l'inflammation que vous observez sur votre peau. Votre peau est en train de réagir à cette substance, ce qui provoque ces symptômes. Pouvez-vous me dire si vous avez récemment changé de produit ou utilisé quelque chose de nouveau sur votre peau ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:17:59.786931",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (408 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:03.030487",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 410,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: drug reactions\nOBSERVATIONS: 1. Lesion Type: The skin appears to be affected by a drug reaction, characterized by a red, itchy, and inflamed appea...",
+        "response": "Il semble que vous ayez une réaction cutanée due à un produit que vous avez utilisé. Cette réaction se manifeste par des démangeaisons, une rougeur et une inflammation de la peau. Cela signifie que votre peau est en train de réagir de manière excessive à une substance qu'elle perçoit comme nocive. Pouvez-vous me dire si vous avez changé de produit récemment ou si vous avez utilisé quelque chose de nouveau ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:03.030487",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (367 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:06.791631",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 475,
+        "prompt_preview": "Le patient demande ce qu'est sa maladie.\n\nDIAGNOSTIC: drug reactions\nOBSERVATIONS: 1. Lesion Type: The skin appears to be affected by a drug reaction, characterized by a red, itchy, and inflamed appea...",
+        "response": "Votre maladie est une réaction cutanée à un produit que vous avez utilisé. Elle se manifeste par une éruption cutanée rouge, démangeaisonneuse et enflammée, ce qui correspond aux symptômes que vous avez décrits. Lorsque votre peau entre en contact avec ce produit, elle réagit en libérant des substances chimiques qui provoquent l'inflammation et la démangeaison. Pouvez-vous me dire si vous avez changé de produit ou si vous avez utilisé quelque chose de nouveau récemment ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:06.791631",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:33.762331",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 21,
+          "nb_questions_asked": 16
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:33.762331",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "symptomatology",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase symptomatology → symptomatology. Lacunes: 3",
+        "patient_multiple_questions": true
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:41.631510",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 933,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS À TOUTES !\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Sym...",
+        "response": "**Question 1 :** \"depuis 3 jours presque\"\n\nRéponse : Vous avez remarqué ces symptômes depuis environ 3 jours, ce qui correspond à la durée que vous avez déjà mentionnée plus tôt. Cela nous aide à comprendre l'évolution de vos symptômes.\n\n**Question 2 :** \"est-ce que mon cas est trop grave ?\"\n\nRéponse : Votre cas semble être lié à une réaction à un produit, ce qui est généralement un problème temporaire et traitable. Cependant, il est important de continuer à surveiller vos symptômes et de suivre les conseils pour une bonne prise en charge.\n\n**Question implicite :** \"Qu'est-ce que cela signifie pour moi ?\"\n\nRéponse : Cela signifie que nous devons prendre les mesures nécessaires pour vous aider à gérer vos symptômes et à prévenir toute complication. Nous allons continuer à discuter des options de traitement et de soins.\n\n**Question de suivi :** Quels sont vos principaux soucis ou inquiétudes concernant votre état actuel ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:18:41.631510",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:19:41.095456",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 22,
+          "nb_questions_asked": 17
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:19:41.095456",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "triggers",
+        "next_question_category": "symptomatology",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "reasoning": "Phase triggers → symptomatology. Lacunes: 3",
+        "patient_multiple_questions": true
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:19:48.388028",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 848,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS À TOUTES !\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Sym...",
+        "response": "**Réponse à la question 1 :** \"Est-ce que je peux prendre un calmant ici de la maison ?\"\n\nIl est généralement possible de prendre un calmant pour soulager la douleur, mais il est important de consulter un médecin avant de prendre tout médicament, surtout si vous n'êtes pas sûr de la cause de vos symptômes. Un médecin pourra vous recommander le meilleur traitement pour votre cas spécifique.\n\n**Réponse à la question 2 :** \"Ou bien je consulte directement un médecin ?\"\n\nIl est recommandé de consulter un médecin directement si vous n'êtes pas sûr de la cause de vos symptômes ou si vous avez des inquiétudes quant à leur gravité. Un médecin pourra évaluer votre état et vous fournir des conseils personnalisés.\n\n**Question de suivi :** \"Avez-vous déjà essayé de prendre un calmant pour soulager vos symptômes, et si oui, quel a été le résultat ?\""
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:19:48.389053",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:20:40.489094",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 23,
+          "nb_questions_asked": 18
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:20:40.489094",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (4 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null,
+        "patient_multiple_questions": true,
+        "force_answer_patient_question": true
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:20:47.987810",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 924,
+        "prompt_preview": "⚠️ LE PATIENT POSE PLUSIEURS QUESTIONS - RÉPONDS À TOUTES !\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Sym...",
+        "response": "1. **Quel type de calmant je peux prendre ?**\n\nPour les réactions cutanées modérées, vous pouvez essayer des antihistaminiques oraux comme la diphenhydramine ou la chlorphéniramine. Cependant, il est essentiel de consulter un médecin avant de prendre tout médicament pour obtenir des conseils adaptés à votre situation spécifique.\n\n2. **Aucune autre question explicite, mais il est important de clarifier les préoccupations implicites**\n\nPuisque vous avez mentionné la possibilité de prendre un calmant, je suppose que vous vous inquiétez de la gravité de votre état et de la manière de gérer les symptômes. Il est crucial de comprendre que les réactions cutanées peuvent varier en gravité et qu'un diagnostic professionnel est nécessaire pour déterminer la meilleure ligne de traitement.\n\n**Pouvez-vous me dire si vous avez déjà consulté un médecin pour cette réaction cutanée ou si vous prévoyez le faire prochainement ?**"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:20:47.987810",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:17.431461",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 24,
+          "nb_questions_asked": 19
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:17.431461",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (5 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:21.234610",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 417,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez une réaction cutanée depuis deux jours avec des symptômes de douleur, déclenchée par un produit. Cela évoque fortement une réaction médicamenteuse, avec une bonne certitude diagnostique. Je vous recommande de cesser l'utilisation du produit en question et de consulter un dermatologue pour un traitement adapté. Avez-vous d'autres questions sur cette affection ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:21.235664",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:32.328836",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": "deux jour",
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [
+            "douleur"
+          ],
+          "denied": [
+            "douleur"
+          ],
+          "intensity": {
+            "douleur": "léger"
+          }
+        },
+        "context": {
+          "triggers": [
+            "produit"
+          ],
+          "aggravating_factors": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 25,
+          "nb_questions_asked": 20
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:32.328836",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "conclude",
+        "current_phase": "conclusion",
+        "reasoning": "Information suffisante (6 échanges, 3 lacunes)",
+        "information_gaps": [
+          "Symptômes détaillés",
+          "Évolution",
+          "Impact quotidien"
+        ],
+        "next_question_category": null
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:35.755432",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 398,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez une réaction cutanée depuis deux jours avec une douleur légère, déclenchée par un produit. Cela évoque fortement une réaction allergique, avec une bonne certitude diagnostique. Je vous recommande d'éviter l'utilisation du produit en question et de prendre des mesures pour soulager la douleur. Avez-vous d'autres questions sur cette réaction ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:35.756442",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse TROP LONGUE (396 > 350 car) - INVALIDE"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:39.435473",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 200,
+        "response_length": 477,
+        "prompt_preview": "Tu es un dermatologue qui termine une consultation.\n\nDIAGNOSTIC: drug reactions\nINFORMATIONS COLLECTÉES:\n{'text': '📋 INFORMATIONS COLLECTÉES:\\n⏱️  Durée: deux jour\\n✅ Symptômes: douleur\\n❌ Symptômes a...",
+        "response": "Merci pour ces informations précieuses. Vous présentez une réaction cutanée depuis deux jours avec des symptômes de douleur et un déclencheur suspecté, à savoir un produit. Cela évoque fortement une réaction cutanée aux médicaments, avec une bonne certitude diagnostique. Je vous recommande de consulter un dermatologue pour un traitement adapté et d'éviter de réutiliser le produit suspecté pour ne pas aggraver la situation. Avez-vous d'autres questions sur cette affection ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-23T01:21:39.435473",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-23T01:22:11.591383"
+}

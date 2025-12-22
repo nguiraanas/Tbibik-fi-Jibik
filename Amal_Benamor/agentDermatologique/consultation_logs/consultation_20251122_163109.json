@@ -1,0 +1,262 @@
+{
+  "session_id": "20251122_163109",
+  "timestamp_start": "2025-11-22T16:31:09.446504",
+  "events": [
+    {
+      "timestamp": "2025-11-22T16:31:10.401015",
+      "type": "CLASSIFICATION",
+      "data": {
+        "detected_class": "Heathy",
+        "confidence": 0.5452237129211426,
+        "top3_predictions": [
+          {
+            "class": "Heathy",
+            "confidence": 0.5452237129211426
+          },
+          {
+            "class": "Alternative 1",
+            "confidence": 0.16356711387634276
+          },
+          {
+            "class": "Alternative 2",
+            "confidence": 0.05452237129211426
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:12.739153",
+      "type": "LLAVA_ANALYSIS",
+      "data": {
+        "description": "1. Lesion Type: The skin appears to be in good health, with no visible abnormalities or lesions.\n2. Color & Appearance: The skin is smooth and has a uniform color, with no visible blemishes or discoloration.\n3. Distribution Pattern: The skin appears to be symmetrical and unblemished, with no signs of distributional patterns.\n4. Associated Signs: There are no visible signs of scratching, inflammation, or discharge on the skin.\n5. Severity Indicators: The skin appears to be in good health, with no signs of acute or chronic conditions.",
+        "structured_data": {
+          "lesion_type": [],
+          "colors": [],
+          "distribution": [],
+          "severity_signs": []
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:12.816729",
+      "type": "RAG_RETRIEVAL",
+      "data": {
+        "query": "Heathy 1. Lesion Type: The skin appears to be in good health, with no visible abnormalities or lesions.\n2. Color & Appearance: The skin is smooth and has a uniform color, with no visible blemishes or discolo",
+        "nb_results": 3,
+        "similarity_scores": [
+          0.01757978817932532,
+          0.01757978817932532,
+          0.01757978817932532
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:12.816729",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:12.919939",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "data": {
+        "content": "Diagnostic principal: Heathy (Confiance: 54.5%)"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:25.147351",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 3367,
+        "response_length": 1331,
+        "prompt_preview": "Tu es un dermatologue expert francophone. Utilise une approche de raisonnement structuré.\n\n═══════════════════════════════════════════════════════════════════\n                    ANALYSE INITIALE DU C...",
+        "response": "🧠 ÉTAPE 2 - TON RAISONNEMENT MÉDICAL:\n\nA) Synthèse de l'observation visuelle:\n   La peau semble être en bonne santé, sans aucune lésion visible ou anomalie notable. L'apparence est lisse et uniforme, sans aucune discoloration ou blemish.\n\nB) Concordance diagnostique:\n   Le diagnostic Heathy est cohérent avec les observations, car il n'y a aucune indication de problème cutané visible. Cependant, il est important de noter que la confiance du modèle est de 54,5%, ce qui n'est pas très élevé.\n\nC) Diagnostic différentiel (3 hypothèses maximum):\n   1. Hypothèse principale: Heathy - probabilité estimée: 60%\n   2. Alternative 1: Érythème (rougeur de la peau) - probabilité estimée: 20%\n   3. Alternative 2: Dermatite (inflammation de la peau) - probabilité estimée: 10%\n\nD) Informations critiques à obtenir:\n   1. L'historique médical du patient, notamment les antécédents de problèmes cutanés.\n   2. Les symptômes actuels du patient, tels que des démangeaisons ou des sensations de brûlure.\n   3. Les médicaments ou produits que le patient utilise actuellement.\n   4. Les conditions environnementales dans lesquelles le patient vit et travaille.\n\nE) Évaluation du niveau d'urgence:\n   Basé sur le score 0,0/10, il n'y a pas d'urgence médicale apparente. Cependant, il est important de poursuivre l'anamnèse et l'examen pour confir"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:31:25.148405",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop longue (1331 > 400 caractères)",
+          "Aucune question posée (dialogue doit continuer)",
+          "Dialogue doit contenir une question"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:21.422519",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 1,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:21.422519",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:21.422519",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:27.082163",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2227,
+        "response_length": 346,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe comprends que vous vous interrogez sur votre état de santé actuel. Il est important de noter que votre peau semble être en bonne santé, mais nous devons explorer davantage pour confirmer cela.\n\nPouvez-vous me dire si vous avez remarqué des changements ou des symptômes particuliers récemment, même s'ils semblent mineurs ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:27.083213",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": true,
+        "status": "✅ VALIDE",
+        "issues": []
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:38.896069",
+      "type": "MEMORY_UPDATE",
+      "data": {
+        "temporal_info": {
+          "duration": null,
+          "onset": null,
+          "evolution": null
+        },
+        "symptoms": {
+          "confirmed": [],
+          "denied": [],
+          "intensity": {}
+        },
+        "context": {
+          "triggers": [],
+          "medical_history": [],
+          "atopy": null
+        },
+        "severity": {
+          "red_flags": [],
+          "impact": {
+            "sleep": null,
+            "daily_activities": null,
+            "psychological": null
+          }
+        },
+        "meta": {
+          "nb_exchanges": 2,
+          "nb_questions_asked": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:38.896069",
+      "type": "URGENCY_ASSESSMENT",
+      "data": {
+        "score": 0.0,
+        "level": "faible",
+        "detected_flags": [],
+        "recommendation": "",
+        "should_see_doctor_urgently": false
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:38.896069",
+      "type": "AGENT_DECISION",
+      "data": {
+        "decision": "continue",
+        "current_phase": "temporal",
+        "next_question_category": "temporal",
+        "information_gaps": [
+          "Durée des symptômes",
+          "Intensité des symptômes",
+          "Évolution dans le temps",
+          "Facteurs déclenchants",
+          "Antécédents médicaux"
+        ],
+        "reasoning": "Phase temporal. Lacunes: Durée des symptômes, Intensité des symptômes, Évolution dans le temps, Facteurs déclenchants, Antécédents médicaux. Prochain focus: temporal."
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:46.233442",
+      "type": "LLM_CALL",
+      "data": {
+        "model": "Llama-3.1-70B",
+        "prompt_length": 2212,
+        "response_length": 586,
+        "prompt_preview": "Tu es un dermatologue expert menant une consultation structurée.\n\n═══════════════════════════════════════════════════════════════════\n                    CONTEXTE DE LA CONSULTATION\n══════════════════...",
+        "response": "💬 TON INTERVENTION:\n\nJe vois que vous avez une question, mais je ne suis pas sûr de comprendre ce que vous voulez savoir. Pouvez-vous me préciser ce que vous entendez par \"pourquoi\" ? Est-ce que vous vous référez à une préoccupation spécifique concernant votre peau ou à quelque chose d'autre ?\n\n(Je n'ai pas encore répondu à la question médicale, car elle n'est pas claire. Je vais d'abord clarifier la question du patient avant de répondre.)\n\nDans ce cas, je vais poser une question pour clarifier la demande du patient :\n\nPouvez-vous me préciser ce que vous entendez par \"pourquoi\" ?"
+      }
+    },
+    {
+      "timestamp": "2025-11-22T16:32:46.233442",
+      "type": "VALIDATION",
+      "data": {
+        "is_valid": false,
+        "status": "❌ INVALIDE",
+        "issues": [
+          "Réponse trop longue (586 > 400 caractères)",
+          "Pattern bloqué: disclaimer_heavy"
+        ]
+      }
+    }
+  ],
+  "timestamp_end": "2025-11-22T16:36:42.419769"
+}
