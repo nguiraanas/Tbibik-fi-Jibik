@@ -37,3 +37,8 @@ __huggingface_repos__.json
 Thumbs.db
 .vscode/
 .idea/
+# =========================
+#Notebook Output
+# =========================
+
+Dorra_BenAmri/Whisper Fine-Tuning on Tunisian Audio Dataset/Notebook Output/whisper-base-tunisian-lora/
