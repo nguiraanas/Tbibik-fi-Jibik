@@ -1,0 +1,39 @@
+# =========================
+# Python / Virtual Envs
+# =========================
+venv/
+env/
+nom_env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Whisper / ML training junk
+# =========================
+**/checkpoint-*/
+**/trainer_state.json
+**/optimizer.pt
+**/scheduler.pt
+**/rng_state.pth
+**/training_args.bin
+**/scaler.pt
+
+# =========================
+# HuggingFace cache
+# =========================
+__huggingface_repos__.json
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
