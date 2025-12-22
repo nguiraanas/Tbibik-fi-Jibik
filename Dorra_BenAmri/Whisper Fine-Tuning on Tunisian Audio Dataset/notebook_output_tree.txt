@@ -1,0 +1,52 @@
+Folder PATH listing for volume Windows
+Volume serial number is 4044-B443
+C:\USERS\DORRA\TBIBEK FI JIBEK\DORRA_BENAMRI\WHISPER FINE-TUNING ON TUNISIAN AUDIO DATASET\NOTEBOOK OUTPUT
+¦   __huggingface_repos__.json
+¦   
++---whisper-base-tunisian-lora
+¦       adapter_config.json
+¦       adapter_model.safetensors
+¦       added_tokens.json
+¦       merges.txt
+¦       normalizer.json
+¦       preprocessor_config.json
+¦       README.md
+¦       special_tokens_map.json
+¦       tokenizer.json
+¦       tokenizer_config.json
+¦       vocab.json
+¦       
++---whisper-lora
+    +---checkpoint-197
+    ¦       adapter_config.json
+    ¦       adapter_model.safetensors
+    ¦       optimizer.pt
+    ¦       README.md
+    ¦       rng_state.pth
+    ¦       scaler.pt
+    ¦       scheduler.pt
+    ¦       trainer_state.json
+    ¦       training_args.bin
+    ¦       
+    +---checkpoint-394
+    ¦       adapter_config.json
+    ¦       adapter_model.safetensors
+    ¦       optimizer.pt
+    ¦       README.md
+    ¦       rng_state.pth
+    ¦       scaler.pt
+    ¦       scheduler.pt
+    ¦       trainer_state.json
+    ¦       training_args.bin
+    ¦       
+    +---checkpoint-591
+            adapter_config.json
+            adapter_model.safetensors
+            optimizer.pt
+            README.md
+            rng_state.pth
+            scaler.pt
+            scheduler.pt
+            trainer_state.json
+            training_args.bin
+            
