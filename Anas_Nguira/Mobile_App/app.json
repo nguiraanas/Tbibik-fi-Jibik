@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "Medical AI",
+    "slug": "medical-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "medical-ai",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+
+    "extra": {
+      "allowInsecureConnections": true
+    },
+
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.medical.ai",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Medical AI to access your camera for medical analysis.",
+        "NSMicrophoneUsageDescription": "Allow Medical AI to access your microphone for speech and audio analysis.",
+        "NSPhotoLibraryUsageDescription": "Allow Medical AI to access your photos for medical image analysis."
+      }
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.medical.ai",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "allowHttp": true
+    },
+
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://medical-ai.app/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Medical AI to access your camera",
+          "microphonePermission": "Allow Medical AI to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
